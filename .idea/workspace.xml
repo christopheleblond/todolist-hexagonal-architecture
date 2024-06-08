@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="00fbb2bc-6363-4473-b9e5-1ad335cd2d55" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todolist-api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todolist-api/src/main/java/christopheleblond/todolist/api/TodoListApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todolist-api/src/main/java/christopheleblond/todolist/api/configuration/TodoListAppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todolist-api/src/main/java/christopheleblond/todolist/api/controller/TodoListController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todolist-api/src/main/java/christopheleblond/todolist/api/resources/TodoListResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todolist-api/src/main/java/christopheleblond/todolist/api/resources/TodoResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todolist-api/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todolist-api/src/test/java/christopheleblond/todolist/api/TodoListApplicationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todolist-api/src/test/java/christopheleblond/todolist/api/configuration/TodolistTestAppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todolist-api/src/test/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todolist-data/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todolist-data/src/main/java/christopheleblond/todolist/data/TodoListInventoryAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todolist-domain/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todolist-domain/src/main/java/christopheleblond/todolist/api/TodoListApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todolist-domain/src/main/java/christopheleblond/todolist/domain/Todo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todolist-domain/src/main/java/christopheleblond/todolist/domain/TodoList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todolist-domain/src/main/java/christopheleblond/todolist/domain/TodoListService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todolist-domain/src/main/java/christopheleblond/todolist/domain/TodoState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todolist-domain/src/main/java/christopheleblond/todolist/spi/TodoListInventory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todolist-domain/src/main/java/christopheleblond/todolist/spi/stubs/TodoListInventoryStub.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todolist-domain/src/test/java/TodoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todolist-domain/src/test/java/christopheleblond/todolist/domain/TodoListServiceTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="JUnit5 Test Class" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="OptimizeOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2haJilosTVflHLZjt5lHFChGJ8i" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.TodoListApplication.executor": "Run",
+    "JUnit.TodoListApplicationIntegrationTest.contextLoads.executor": "Run",
+    "JUnit.TodoListApplicationIntegrationTest.executor": "Run",
+    "JUnit.TodoListApplicationTest.executor": "Run",
+    "JUnit.TodoListApplicationTest.should_contain_new_task_when_add_new_task_to_list.executor": "Run",
+    "JUnit.TodoListApplicationTest.should_not_contain_task_when_delete.executor": "Run",
+    "JUnit.TodoListApplicationTest.should_return_task_when_find_task_by_id.executor": "Run",
+    "JUnit.TodoListApplicationTest.should_start.executor": "Run",
+    "JUnit.TodoListServiceTest.executor": "Run",
+    "JUnit.TodoTest.todoCreationTest.executor": "Run",
+    "JUnit.java in todolist-api.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "onboarding.tips.debug.path": "E:/Code/todolist-hexagonal-archi/todolist-domain/src/main/java/christopheleblond/redis/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "actions.on.save"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="christopheleblond.todolist.api" />
+      <recent name="christopheleblond.todolist.domain" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.TodoListApplication">
+    <configuration name="TodoListApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="christopheleblond.todolist.api.TodoListApplication" />
+      <module name="todolist-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="christopheleblond.todolist.api.resources.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TodoListApplicationIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="todolist-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="christopheleblond.todolist.api.resources.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="christopheleblond.todolist.api" />
+      <option name="MAIN_CLASS_NAME" value="christopheleblond.todolist.api.TodoListApplicationIntegrationTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TodoListApplicationIntegrationTest.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="todolist-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="christopheleblond.todolist.api.resources.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="christopheleblond.todolist.api" />
+      <option name="MAIN_CLASS_NAME" value="christopheleblond.todolist.api.TodoListApplicationIntegrationTest" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TodoListApplicationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="todolist-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="christopheleblond.todolist.api.resources.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="christopheleblond.todolist.api" />
+      <option name="MAIN_CLASS_NAME" value="christopheleblond.todolist.api.TodoListApplicationTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="java in todolist-api" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="todolist-api" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/todolist-api/src/test/java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TodoListApplication" />
+        <item itemvalue="JUnit.TodoListApplicationIntegrationTest.contextLoads" />
+        <item itemvalue="JUnit.TodoListApplicationIntegrationTest" />
+        <item itemvalue="JUnit.java in todolist-api" />
+        <item itemvalue="JUnit.TodoListApplicationTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="00fbb2bc-6363-4473-b9e5-1ad335cd2d55" name="Changes" comment="" />
+      <created>1717826385809</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1717826385809</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-core" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-webmvc" />
+    <option featureType="dependencySupport" implementationName="java:org.projectlombok:lombok" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/christopheleblond/redis/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/todolist-domain/src/main/java/christopheleblond/redis/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

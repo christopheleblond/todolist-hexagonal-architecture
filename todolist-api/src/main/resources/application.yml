@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: Todolist manager
+  data:
+    mongodb:
+      database: todolist
