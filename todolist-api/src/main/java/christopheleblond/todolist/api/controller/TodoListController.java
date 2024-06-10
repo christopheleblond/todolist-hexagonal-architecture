@@ -35,7 +35,7 @@ public class TodoListController {
     }
 
     @PutMapping
-    public ResponseEntity<TodoListResource> createTodoList(TodoListResource todoList) {
+    public ResponseEntity<TodoListResource> createTodoList(@RequestBody TodoListResource todoList) {
         TodoList created = todoListApi.addTodoList(todoList.title(), todoList.description());
         return ResponseEntity.status(HttpStatus.CREATED).body(new TodoListResource(created));
     }

@@ -2,6 +2,7 @@ package christopheleblond.todolist.api;
 
 import christopheleblond.todolist.api.configuration.TodolistTestAppConfig;
 import christopheleblond.todolist.api.controller.TodoListController;
+import christopheleblond.todolist.api.resources.TodoListResource;
 import christopheleblond.todolist.domain.Todo;
 import christopheleblond.todolist.domain.TodoList;
 import com.fasterxml.jackson.core.type.TypeReference;
@@ -66,7 +67,9 @@ class TodoListApplicationTest {
 
     @Test
     void should_contain_new_list_when_create_list() throws Exception {
-        MvcResult mvcResult = mockMvc.perform(put("/todos"))
+        MvcResult mvcResult = mockMvc.perform(put("/todos")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(mapper.writeValueAsString(new TodoListResource(null, "new list", "description", List.of()))))
                 .andExpect(status().isCreated())
                 .andReturn();
 
