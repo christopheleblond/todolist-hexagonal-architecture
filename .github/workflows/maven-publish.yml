@@ -45,7 +45,7 @@ jobs:
           node-version: 16
       - run: npm ci
 
-  publish-gpr:
+  publish-ui:
     needs: build-ui
     runs-on: ubuntu-latest
     defaults:
