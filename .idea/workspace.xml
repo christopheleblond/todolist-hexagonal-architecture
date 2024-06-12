@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9fc2412-b76d-4d83-bbda-21c85be1d777" name="Changes" comment="CI packaging">
+    <list default="true" id="b9fc2412-b76d-4d83-bbda-21c85be1d777" name="Changes" comment="CI node">
       <change beforePath="$PROJECT_DIR$/.github/workflows/maven-publish.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/maven-publish.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,13 +57,38 @@
       <option name="project" value="LOCAL" />
       <updated>1718216830153</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="CI node">
+      <option name="closed" value="true" />
+      <created>1718217451986</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1718217451986</updated>
+    </task>
+    <task id="LOCAL-00004" summary="CI node">
+      <option name="closed" value="true" />
+      <created>1718217608036</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1718217608036</updated>
+    </task>
+    <task id="LOCAL-00005" summary="CI node">
+      <option name="closed" value="true" />
+      <created>1718217699868</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1718217699868</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
     <MESSAGE value="Git ignore" />
     <MESSAGE value="CI packaging" />
-    <option name="LAST_COMMIT_MESSAGE" value="CI packaging" />
+    <MESSAGE value="CI node" />
+    <option name="LAST_COMMIT_MESSAGE" value="CI node" />
   </component>
 </project>
