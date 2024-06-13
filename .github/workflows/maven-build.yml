@@ -40,7 +40,7 @@ jobs:
       run:
         working-directory: todolist-api
     steps:
-      - uses: actions/download-artifact@master
+      - uses: actions/download-artifact@main
         with:
           name: build.jar
           path: target/todolist-api.jar
