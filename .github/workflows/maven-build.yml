@@ -44,11 +44,7 @@ jobs:
         with:
           name: todolist-api
           path: todolist-api/target/todolist-api.jar
-      - uses: actions/upload-artifact@v4
-        with:
-          name: todolist-ws
-          path: .
-
       - uses: actions/checkout@v4
+      - run: ls -l .
       - name: Build the Docker image
         run: docker build . --file Dockerfile --tag todolist-api:$(date +%s)
