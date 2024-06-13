@@ -31,7 +31,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: todolist-api
-          path: .
+          path: todolist-api/target/todolist-api.jar
 
   docker-build:
     runs-on: ubuntu-latest
@@ -42,8 +42,8 @@ jobs:
     steps:
       - uses: actions/download-artifact@v4
         with:
-          name: build.jar
-          path: target/todolist-api.jar
+          name: todolist-api
+          path: todolist-api/target/todolist-api.jar
 
       - uses: actions/checkout@v4
       - name: Build the Docker image
