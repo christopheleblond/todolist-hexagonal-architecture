@@ -1,4 +1,4 @@
-name: Node Build
+name: Node Publish
 
 on:
   release:

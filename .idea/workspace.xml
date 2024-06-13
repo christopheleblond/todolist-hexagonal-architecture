@@ -5,11 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9fc2412-b76d-4d83-bbda-21c85be1d777" name="Changes" comment="CI node">
-      <change afterPath="$PROJECT_DIR$/.github/workflows/maven-build.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.github/workflows/node-build.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.github/workflows/node-publish.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/maven-publish.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/maven-publish.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/node-publish.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/node-publish.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todolist-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/todolist-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todolist-data/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/todolist-data/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todolist-domain/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/todolist-domain/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todolist-ui/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/todolist-ui/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todolist-ui/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/todolist-ui/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +168,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718219365039</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="CI node">
+      <option name="closed" value="true" />
+      <created>1718297347956</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1718297347956</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
