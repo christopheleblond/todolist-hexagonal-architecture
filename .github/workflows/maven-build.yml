@@ -28,9 +28,9 @@ jobs:
       - name: Build
         run: mvn -B package --file pom.xml
 
-      - uses: actions/upload-artifact@main
+      - uses: actions/upload-artifact@v4
         with:
-          name: build.jar
+          name: todolist-api
           path: target/todolist-api.jar
 
   docker-build:
@@ -44,6 +44,7 @@ jobs:
         with:
           name: build.jar
           path: target/todolist-api.jar
+
       - uses: actions/checkout@v4
       - name: Build the Docker image
         run: docker build . --file Dockerfile --tag todolist-api:$(date +%s)

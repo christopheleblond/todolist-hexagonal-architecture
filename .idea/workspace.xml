@@ -254,7 +254,23 @@
       <option name="project" value="LOCAL" />
       <updated>1718302053673</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Ci releases + docker">
+      <option name="closed" value="true" />
+      <created>1718302428004</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1718302428004</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Ci releases + docker">
+      <option name="closed" value="true" />
+      <created>1718302525998</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1718302525998</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
