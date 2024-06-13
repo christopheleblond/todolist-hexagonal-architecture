@@ -27,3 +27,11 @@ jobs:
 
       - name: Build
         run: mvn -B package --file pom.xml
+
+  docker-build:
+    runs-on: ubuntu-latest
+    needs: build-api
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build the Docker image
+        run: docker build todolist-api --file Dockerfile --tag todolist-api:$(date +%s)

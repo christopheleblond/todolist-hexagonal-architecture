@@ -20,3 +20,11 @@ jobs:
           node-version: 16
           registry-url: https://npm.pkg.github.com/
       - run: npm ci
+
+  docker-build:
+    runs-on: ubuntu-latest
+    needs: build-api
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build the Docker image
+        run: docker build todolist-ui --file Dockerfile --tag todolist-ui:$(date +%s)

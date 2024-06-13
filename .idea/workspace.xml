@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9fc2412-b76d-4d83-bbda-21c85be1d777" name="Changes" comment="CI node">
+    <list default="true" id="b9fc2412-b76d-4d83-bbda-21c85be1d777" name="Changes" comment="Ci fix">
+      <change afterPath="$PROJECT_DIR$/.github/workflows/release.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/maven-build.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/maven-build.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/maven-publish.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.github/workflows/node-build.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/node-build.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/node-publish.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -185,7 +188,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718297718795</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Ci fix">
+      <option name="closed" value="true" />
+      <created>1718298205199</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1718298205199</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -193,6 +204,7 @@
     <MESSAGE value="Git ignore" />
     <MESSAGE value="CI packaging" />
     <MESSAGE value="CI node" />
-    <option name="LAST_COMMIT_MESSAGE" value="CI node" />
+    <MESSAGE value="Ci fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ci fix" />
   </component>
 </project>
