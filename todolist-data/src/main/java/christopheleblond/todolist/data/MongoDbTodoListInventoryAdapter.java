@@ -10,7 +10,7 @@ import org.springframework.data.mongodb.core.query.Query;
 import java.util.List;
 import java.util.UUID;
 
-public class TodoListInventoryAdapter implements TodoListInventory {
+public class MongoDbTodoListInventoryAdapter implements TodoListInventory {
 
     @Autowired
     private MongoTemplate mongoTemplate;

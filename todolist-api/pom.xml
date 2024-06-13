@@ -112,6 +112,7 @@
                             <artifactId>lombok</artifactId>
                         </exclude>
                     </excludes>
+                    <finalName>todolist-api</finalName>
                 </configuration>
             </plugin>
         </plugins>
