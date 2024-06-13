@@ -40,11 +40,11 @@ jobs:
       run:
         working-directory: todolist-api
     steps:
+      - uses: actions/checkout@v4
       - uses: actions/download-artifact@v4
         with:
           name: todolist-api
           path: todolist-api/target/todolist-api.jar
-      - uses: actions/checkout@v4
       - run: ls -l .
       - name: Build the Docker image
         run: docker build . --file Dockerfile --tag todolist-api:$(date +%s)
