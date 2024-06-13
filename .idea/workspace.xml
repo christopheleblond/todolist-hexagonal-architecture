@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9fc2412-b76d-4d83-bbda-21c85be1d777" name="Changes" comment="CI node">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/node-publish.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/node-publish.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/node-build.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/node-build.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todolist-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/todolist-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todolist-data/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/todolist-data/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todolist-domain/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/todolist-domain/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todolist-ui/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/todolist-ui/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todolist-ui/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/todolist-ui/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +15,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
@@ -176,7 +177,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718297347956</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="CI node">
+      <option name="closed" value="true" />
+      <created>1718297718795</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1718297718795</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
