@@ -24,7 +24,10 @@ jobs:
   docker-build:
     runs-on: ubuntu-latest
     needs: build-ui
+    defaults:
+      run:
+        working-directory: todolist-ui
     steps:
       - uses: actions/checkout@v4
       - name: Build the Docker image
-        run: docker build todolist-ui --file Dockerfile --tag todolist-ui:$(date +%s)
+        run: docker build . --file Dockerfile --tag todolist-ui:$(date +%s)
