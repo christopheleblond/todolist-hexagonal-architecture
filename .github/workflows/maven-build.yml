@@ -56,7 +56,9 @@ jobs:
   docker-publish:
     runs-on: ubuntu-latest
     needs: build-api
-
+    defaults:
+      run:
+        working-directory: todolist-api
     permissions:
       contents: read
       packages: write
