@@ -6,7 +6,11 @@ name: Api Build
 on:
   push:
     branches: [ main ]
-# test trigger
+
+env:
+  REGISTRY: ghcr.io
+  IMAGE_NAME: ${{ github.repository }}
+
 jobs:
   build-api:
 
