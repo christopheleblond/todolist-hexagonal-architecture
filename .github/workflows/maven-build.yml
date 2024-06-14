@@ -10,7 +10,6 @@ on:
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: todolist-api
-  IMAGE_TAG: latest
 
 jobs:
   build-api:
@@ -84,7 +83,7 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build the Docker image
-        run: docker build . --file Dockerfile --tag ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:{{ env.IMAGE_TAG }}
+        run: docker build . --file Dockerfile --tag ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
 
       - name: Push Docker Image
-        run: docker push ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:{{ env.IMAGE_TAG }}
+        run: docker push ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
