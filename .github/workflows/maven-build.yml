@@ -82,12 +82,6 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Extract metadata (tags, labels) for Docker
-        id: meta
-        uses: docker/metadata-action@v5.5.1
-        with:
-          images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
-
       - name: Build the Docker image
         run: docker build . --file Dockerfile --tag ${{ env.REGISTRY }}/todolist-api:$(date +%s)
 
