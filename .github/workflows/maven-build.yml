@@ -89,7 +89,7 @@ jobs:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
 
       - name: Build the Docker image
-        run: docker build . --file Dockerfile --tag todolist-api:$(date +%s)
+        run: docker build . --file Dockerfile --tag ${{ env.REGISTRY }}/todolist-api:$(date +%s)
 
       - name: Push Docker Image
         run: docker push ${{ env.REGISTRY }}/todolist-api:$(date +%s)
