@@ -34,8 +34,12 @@ jobs:
       - name: Version
         run: |
           mvn versions:set -DnewVersion=${{ env.RELEASE_VERSION }}
-          git add .
-          git commit -m "Version ${{ env.RELEASE_VERSION }}"
+
+      - name: Commit and push version
+        uses: devops-infra/action-commit-push@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          commit_message: Version ${{ env.RELEASE_VERSION }}
 
       - name: Build
         run: mvn -B -DskipTests package --file pom.xml
