@@ -44,6 +44,8 @@ jobs:
         with:
           target_branch: main
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          amend: true
+          force: true
           commit_message: Version ${{ env.RELEASE_VERSION }}
 
   build-api:
