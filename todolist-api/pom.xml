@@ -6,7 +6,7 @@
     <parent>
         <groupId>christopheleblond.todolist</groupId>
         <artifactId>todolist-hexagonal-archi</artifactId>
-        <version>1.0.11</version>
+        <version>1.0.12</version>
     </parent>
 
     <artifactId>todolist-api</artifactId>
@@ -34,13 +34,13 @@
         <dependency>
             <groupId>christopheleblond.todolist</groupId>
             <artifactId>todolist-domain</artifactId>
-            <version>1.0.11</version>
+            <version>1.0.12</version>
         </dependency>
 
         <dependency>
             <groupId>christopheleblond.todolist</groupId>
             <artifactId>todolist-data</artifactId>
-            <version>1.0.11</version>
+            <version>1.0.12</version>
         </dependency>
 
         <dependency>
