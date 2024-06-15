@@ -6,7 +6,7 @@
     <parent>
         <groupId>christopheleblond.todolist</groupId>
         <artifactId>todolist-hexagonal-archi</artifactId>
-        <version>1.0.8</version>
+        <version>1.0.9</version>
     </parent>
 
     <artifactId>todolist-domain</artifactId>
