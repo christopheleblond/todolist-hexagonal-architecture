@@ -94,11 +94,6 @@ jobs:
         with:
           node-version: 16
           registry-url: https://npm.pkg.github.com/
-      - name: Set Version
-        run: |
-          npm version ${{ env.RELEASE_VERSION }}
-          git add .
-          git commit -m "Set version UI: ${{ env.RELEASE_VERSION }}"
       - run: npm ci
       - run: npm publish
         env:
@@ -139,3 +134,33 @@ jobs:
 
       - name: Push Docker Image
         run: docker push ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}/todolist-api:${{ env.RELEASE_VERSION }}
+
+  docker-publish-ui:
+    runs-on: ubuntu-latest
+    needs: build-ui
+    defaults:
+      run:
+        working-directory: todolist-ui
+
+    permissions:
+      contents: read
+      packages: write
+      attestations: write
+      id-token: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Log in to the Container registry
+        uses: docker/login-action@v3.2.0
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build the Docker image
+        run: docker build . --file Dockerfile --tag ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}/todolist-ui:${{ env.RELEASE_VERSION }}
+
+      - name: Push Docker Image
+        run: docker push ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}/todolist-ui:${{ env.RELEASE_VERSION }}
