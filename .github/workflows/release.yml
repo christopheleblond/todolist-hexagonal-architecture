@@ -5,6 +5,7 @@ name: Api Publish
 
 on:
   release:
+    types: [published]
     branches: [ main ]
 
 env:
@@ -32,12 +33,12 @@ jobs:
 
       - name: Version
         run: |
-          mvn version:set -DnewVersion=${{ env.RELEASE_VERSION }}
+          mvn versions:set -DnewVersion=${{ env.RELEASE_VERSION }}
           git add .
           git commit -m "Version ${{ env.RELEASE_VERSION }}"
 
       - name: Build
-        run: mvn -B package --file pom.xml
+        run: mvn -B -DskipTests package --file pom.xml
 
       - name: Publish to GitHub Packages Apache Maven
         run: mvn deploy -s $GITHUB_WORKSPACE/settings.xml
