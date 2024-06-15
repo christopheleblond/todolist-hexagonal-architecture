@@ -7,7 +7,7 @@
 
     <groupId>christopheleblond.todolist</groupId>
     <artifactId>todolist-hexagonal-archi</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.7</version>
     <packaging>pom</packaging>
     <modules>
         <module>todolist-domain</module>
