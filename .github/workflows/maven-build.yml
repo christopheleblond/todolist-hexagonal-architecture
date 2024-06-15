@@ -5,11 +5,10 @@ name: Api Build
 
 on:
   push:
-    branches: [ main ]
-
-env:
-  REGISTRY: ghcr.io
-  IMAGE_NAME: ${{ github.repository }}
+    tags-ignore:
+      - '**'
+    branches:
+      - '**'
 
 jobs:
   build-api:
@@ -37,53 +36,18 @@ jobs:
           name: todolist-api
           path: todolist-api/target/todolist-api.jar
 
-#  docker-build:
-#    runs-on: ubuntu-latest
-#    needs: build-api
-#    defaults:
-#      run:
-#        working-directory: todolist-api
-#    steps:
-#      - uses: actions/checkout@v4
-#      - uses: actions/download-artifact@v4
-#        with:
-#          name: todolist-api
-#          path: todolist-api/target/todolist-api.jar
-#      - run: ls -l .
-#      - name: Build the Docker image
-#        run: docker build . --file Dockerfile --tag todolist-api:$(date +%s)
-
-  docker-publish:
+  docker-build:
     runs-on: ubuntu-latest
     needs: build-api
     defaults:
       run:
         working-directory: todolist-api
-    permissions:
-      contents: read
-      packages: write
-      attestations: write
-      id-token: write
-
     steps:
-
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
+      - uses: actions/checkout@v4
       - uses: actions/download-artifact@v4
         with:
           name: todolist-api
           path: todolist-api/target/todolist-api.jar
-
-      - name: Log in to the Container registry
-        uses: docker/login-action@v3.2.0
-        with:
-          registry: ${{ env.REGISTRY }}
-          username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
-
+      - run: ls -l .
       - name: Build the Docker image
-        run: docker build . --file Dockerfile --tag ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}/todolist-api:latest
-
-      - name: Push Docker Image
-        run: docker push ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}/todolist-api:latest
+        run: docker build . --file Dockerfile --tag todolist-api:$(date +%s)

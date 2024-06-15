@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b9fc2412-b76d-4d83-bbda-21c85be1d777" name="Changes" comment="Ci releases + docker">
       <change beforePath="$PROJECT_DIR$/.github/workflows/maven-build.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/maven-build.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/node-build.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/node-build.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.github/workflows/release.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/release.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -319,7 +320,95 @@
       <option name="project" value="LOCAL" />
       <updated>1718304070640</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Ci releases + docker">
+      <option name="closed" value="true" />
+      <created>1718388213629</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1718388213630</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Ci releases + docker">
+      <option name="closed" value="true" />
+      <created>1718388301438</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1718388301438</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Ci releases + docker">
+      <option name="closed" value="true" />
+      <created>1718388501557</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1718388501557</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Ci releases + docker">
+      <option name="closed" value="true" />
+      <created>1718388808431</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1718388808431</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Ci releases + docker">
+      <option name="closed" value="true" />
+      <created>1718388927470</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1718388927470</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Ci releases + docker">
+      <option name="closed" value="true" />
+      <created>1718389016798</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1718389016798</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Ci releases + docker">
+      <option name="closed" value="true" />
+      <created>1718389126078</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1718389126078</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Ci releases + docker">
+      <option name="closed" value="true" />
+      <created>1718389362624</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1718389362624</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Ci releases + docker">
+      <option name="closed" value="true" />
+      <created>1718389449907</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1718389449907</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Ci releases + docker">
+      <option name="closed" value="true" />
+      <created>1718389688890</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1718389688890</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Ci releases + docker">
+      <option name="closed" value="true" />
+      <created>1718437189119</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1718437189119</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

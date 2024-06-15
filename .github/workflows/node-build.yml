@@ -2,8 +2,11 @@ name: Node Build
 
 on:
   push:
-    branches: [ main ]
-# test trigger
+    tags-ignore:
+      - '**'
+    branches:
+      - '**'
+
 jobs:
   build-ui:
     runs-on: ubuntu-latest

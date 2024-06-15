@@ -6,7 +6,12 @@ name: Api Publish
 on:
   release:
     branches: [ main ]
-# test trigger
+
+env:
+  REGISTRY: ghcr.io
+  IMAGE_NAME: ${{ github.repository }}
+  RELEASE_VERSION: ${{ github.event.release.tag_name }}
+
 jobs:
   build-api:
 
@@ -24,6 +29,12 @@ jobs:
           distribution: 'temurin'
           server-id: github # Value of the distributionManagement/repository/id field of the pom.xml
           settings-path: ${{ github.workspace }} # location for the settings.xml file
+
+      - name: Version
+        run: |
+          mvn version:set -DnewVersion=${{ env.RELEASE_VERSION }}
+          git add .
+          git commit -m "Version ${{ env.RELEASE_VERSION }}"
 
       - name: Build
         run: mvn -B package --file pom.xml
@@ -47,17 +58,23 @@ jobs:
         with:
           node-version: 16
           registry-url: https://npm.pkg.github.com/
+      - name: Set Version
+        run: |
+          npm version ${{ env.RELEASE_VERSION }}
+          git add .
+          git commit -m "Set version UI: ${{ env.RELEASE_VERSION }}"
       - run: npm ci
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
-  docker-publish-api:
+  docker-publish:
     runs-on: ubuntu-latest
     needs: build-api
     defaults:
       run:
-        working-directory: todolist-ui
+        working-directory: todolist-api
+
     permissions:
       contents: read
       packages: write
@@ -65,27 +82,24 @@ jobs:
       id-token: write
 
     steps:
+
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - uses: actions/download-artifact@v4
+        with:
+          name: todolist-api
+          path: todolist-api/target/todolist-api.jar
+
       - name: Log in to the Container registry
-        uses: docker/login-action@65b78e6e13532edd9afa3aa52ac7964289d1a9c1
+        uses: docker/login-action@v3.2.0
         with:
           registry: ${{ env.REGISTRY }}
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Extract metadata (tags, labels) for Docker
-        id: meta
-        uses: docker/metadata-action@9ec57ed1fcdbf14dcef7dfbe97b2010124a938b7
-        with:
-          images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+      - name: Build the Docker image
+        run: docker build . --file Dockerfile --tag ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}/todolist-api:${{ env.RELEASE_VERSION }}
 
-      - name: Build and push Docker image
-        id: push
-        uses: docker/build-push-action@f2a1d5e99d037542a71f64918e516c093c6f3fc4
-        with:
-          context: .
-          push: true
-          tags: ${{ steps.meta.outputs.tags }}
-          labels: ${{ steps.meta.outputs.labels }}
+      - name: Push Docker Image
+        run: docker push ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}/todolist-api:${{ env.RELEASE_VERSION }}
